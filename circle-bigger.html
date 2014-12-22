@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Circle Bigger</title>
+    <style type="text/css">
+        html, body {
+            background-color: #006666;
+        }
+        .middle {
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <style type="text/css">
+        .linear-circle > div {
+            height: 15px;
+            width: 15px;
+            background-color: black;
+            display: inline-block;
+            border-radius: 100%;
+        }
+
+        .linear-circle > div:nth-child(1) {
+            animation: bounce 1.2s infinite ease-in-out;
+        }
+        .linear-circle > div:nth-child(2) {
+            animation: bounce2 1.2s infinite ease-in-out;
+        }
+        .linear-circle > div:nth-child(3) {
+            animation: bounce3 1.2s infinite ease-in-out;
+        }
+        .linear-circle > div:nth-child(4) {
+            animation: bounce2 1.2s infinite ease-in-out;
+        }
+        .linear-circle > div:nth-child(5) {
+            animation: bounce 1.2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 50%, 100% {
+                transform: scale(0.4);
+            }
+            25% {
+                transform: scale(0.5);
+            }
+            75% {
+                transform: scale(0.3);
+            }
+        }
+
+        @keyframes bounce2 {
+            0%, 50%, 100% {
+                transform: scale(0.4);
+            }
+            25% {
+                transform: scale(0.6);
+            }
+            75% {
+                transform: scale(0.2);
+            }
+        }
+
+        @keyframes bounce3 {
+            0%, 50%, 100% {
+                transform: scale(0.4);
+            }
+            25% {
+                transform: scale(0.7);
+            }
+            75% {
+                transform: scale(0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="middle">
+    <div class="linear-circle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+</body>
+</html>
