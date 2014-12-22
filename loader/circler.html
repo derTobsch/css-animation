@@ -23,16 +23,16 @@
             height: 18px;
             width: 18px;
             border-radius: 100%;
-            background-color: black;
+            background-color: white;
             display: inline-block;
-            margin-left: -4px;
+            margin-left: -7px;
         }
 
-        .left > div {
-            animation: stretch 1s infinite ease-in-out;
+        .left > div, .right > div {
+            animation: 1s linear 0s normal none infinite running bounce;
         }
 
-        .left > div:nth-child(1) {
+        .left > div:nth-child(1), .right > div:nth-child(1) {
             animation-delay: -1s;
         }
         .left > div:nth-child(2) {
@@ -51,13 +51,6 @@
             animation-delay: -0.5s;
         }
 
-        .right > div {
-            animation: stretchRight 1s infinite ease-in-out;
-        }
-
-        .right > div:nth-child(1) {
-            animation-delay: -1s;
-        }
         .right > div:nth-child(2) {
             animation-delay: -1.1s;
         }
@@ -74,17 +67,7 @@
             animation-delay: -1.5s;
         }
 
-
-        @keyframes stretch {
-            0%, 70%, 100% {
-                transform: scale(0);
-            }
-            1% {
-                transform: scale(0.7);
-            }
-        }
-
-        @keyframes stretchRight {
+        @keyframes bounce {
             0%, 70%, 100% {
                 transform: scale(0);
             }

@@ -5,9 +5,9 @@
     <title>Spinner and animated icons</title>
     <style type="text/css">
         html, body {
-            background-color: #006666;
             font-size: 0.94em;
             font-family: Lato, verdana, sans-serif;
+            background-color: #006666;
         }
         a:hover {
             color: #7F7F7F;
@@ -21,28 +21,39 @@
         a {
             text-decoration: none;
         }
-        .middle {
+
+        .container {
             width: 250px;
             height: 100px;
             position: absolute;
             top:0;
             bottom: 20%;
-            left: 0;
-            right: 0;
             margin: auto;
+        }
+        .left {
+            left: 0;
+            right: 50%;
+        }
+        .right {
+            left: 50%;
+            right: 0;
         }
     </style>
 </head>
 <body>
-<div class="middle">
-    <a href="circle.html">Circle</a>
-    <a href="circle-bigger.html">Circle</a>
-    <a href="equalizer.html">equalizer</a>
-    <a href="kitt.html">Kitt</a>
-    <a href="kitt-the-second.html">Kitt-the-second</a>
-    <a href="wobbler.html">wobbler</a>
-    <a href="wobbler2.html">wobbler2</a>
-    <a href="circler.html">Circler</a>
+<div class="container left">
+    <h2>Loader</h2>
+    <a href="loader/linear-bounce.html">linear-bounce</a>
+    <a href="loader/linear-pulse.html">linear-pulse</a>
+    <a href="loader/kitt.html">kitt</a>
+    <a href="loader/kitt-the-second.html">kitt-the-second</a>
+    <a href="loader/wobbler.html">wobbler</a>
+    <a href="loader/wobbler2.html">wobbler2</a>
+    <a href="loader/circler.html">circler</a>
+</div>
+<div class="container right">
+    <h2>Animated Icons</h2>
+    <a href="icons/equalizer.html">equalizer</a>
 </div>
 </body>
 </html>
