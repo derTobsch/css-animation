@@ -7,7 +7,7 @@ Living icons and animated loader written in css.
 Demo
 ====================================================
 
-http://dertobsch.github.io/css-animations/
+http://dertobsch.github.io/css-animation/
 
 
 Why it needed to exist
