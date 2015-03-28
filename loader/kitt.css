@@ -1,62 +1,65 @@
-.right, .left {
-    position: absolute;
-    top: 0;
+.kitt {
+    margin-right: 85px;
 }
 
-.right > div, .left > div {
-    height: 18px;
-    width: 18px;
-    border-radius: 100%;
+.kitt > .right, .kitt > .left {
+    position: absolute;
+}
+
+.kitt >  .right > div, .kitt > .left > div {
+    height: 16px;
+    width: 16px;
     background-color: white;
-    display: inline-block;
+    border-radius: 100%;
+    display: inline-flex;
     margin-left: -4px;
 }
 
-.left > div, .right > div {
+.kitt > .left > div,.kitt > .right > div {
     animation: 1.5s linear 0s normal none infinite running bounce;
 }
 
-.left > div:nth-child(1), .right > div:nth-child(1) {
+.kitt > .left > div:nth-child(1),.kitt > .right > div:nth-child(1) {
     animation-delay: -1.5s;
 }
 
-.left > div:nth-child(2) {
+.kitt > .left > div:nth-child(2) {
     animation-delay: -1.35s;
 }
 
-.left > div:nth-child(3) {
+.kitt > .left > div:nth-child(3) {
     animation-delay: -1.2s;
 }
 
-.left > div:nth-child(4) {
+.kitt > .left > div:nth-child(4) {
     animation-delay: -1.05s;
 }
 
-.left > div:nth-child(5) {
+.kitt > .left > div:nth-child(5) {
     animation-delay: -0.9s;
 }
 
-.left > div:nth-child(6) {
+.kitt > .left > div:nth-child(6) {
     animation-delay: -0.75s;
 }
 
-.right > div:nth-child(2) {
+.kitt > .right > div:nth-child(2) {
     animation-delay: -1.65s;
 }
 
-.right > div:nth-child(3) {
+.kitt > .right > div:nth-child(3) {
     animation-delay: -1.8s;
 }
 
-.right > div:nth-child(4) {
+.kitt > .right > div:nth-child(4) {
     animation-delay: -1.95s;
 }
 
-.right > div:nth-child(5) {
+.kitt > .right > div:nth-child(5) {
     animation-delay: -2.1s;
 }
 
-.right > div:nth-child(6) {
+.kitt > .right > div:nth-child(6) {
     animation-delay: -2.25s;
 }
 

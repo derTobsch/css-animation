@@ -6,7 +6,7 @@
     border-radius: 100%;
     margin-left: -2px;
 
-    animation: 1.6s linear 0s normal none infinite running bounce;
+    animation: bounce 1.6s ease-out 0s normal none infinite running;
 }
 
 .linear-bounce > div:nth-child(1) {

@@ -2,21 +2,21 @@
     height: 18px;
     width: 18px;
     background-color: white;
-    display: inline-block;
+    display: inline-flex;
     border-radius: 100%;
     margin-left: -8px;
 }
 
 .linear-pulse > div:nth-child(1), .linear-pulse > div:nth-child(5) {
-    animation: bounceOuter 1.5s infinite linear;
+    animation: bounceOuter 1.2s ease-in 0s normal none infinite running;
 }
 
 .linear-pulse > div:nth-child(2), .linear-pulse > div:nth-child(4) {
-    animation: bounceInner 1.5s infinite linear;
+    animation: bounceInner 1.2s ease-in 0s normal none infinite running;
 }
 
 .linear-pulse > div:nth-child(3) {
-    animation: bounceMiddle 1.5s infinite linear;
+    animation: bounceMiddle 1.2s ease-in 0s normal none infinite running;
 }
 
 @keyframes bounceOuter {
