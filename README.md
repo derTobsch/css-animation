@@ -13,8 +13,7 @@ http://dertobsch.github.io/css-animation/
 Why it needed to exist
 ====================================================
 
-I needed a way to generate a consistent NICE color for any given word 
-to assign a tag it's own independent color  (without knowing what all tags are).
+We do not want to have javascript animations because javascript is single threaded and this will slow down everything.
 
 
 How to use it
