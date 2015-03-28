@@ -1,0 +1,60 @@
+.equalizer {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+}
+
+.equalizer > div {
+    width: 8px;
+    display: inline-block;
+    background-color: white;
+    margin-left: -2px;
+}
+
+.equalizer > div:nth-child(1) {
+    animation: 1.5s linear 0s normal none infinite running barOne;
+}
+
+.equalizer > div:nth-child(2) {
+    animation: 1.5s linear -0.2s normal none infinite running barTwo;
+}
+
+.equalizer > div:nth-child(3) {
+    animation: 1.5s linear -0.5s normal none infinite running barThree;
+}
+
+@keyframes barOne {
+    0%, 40%, 100% {
+        padding-bottom: 15px;
+    }
+    20%, 60% {
+        padding-bottom: 25px;
+    }
+    80% {
+        padding-bottom: 3px;
+    }
+}
+
+@keyframes barTwo {
+    0%, 40%, 100% {
+        padding-bottom: 30px;
+    }
+    20%, 60% {
+        padding-bottom: 10px;
+    }
+    80% {
+        padding-bottom: 5px;
+    }
+}
+
+@keyframes barThree {
+    0%, 40%, 100% {
+        padding-bottom: 20px;
+    }
+    20%, 60% {
+        padding-bottom: 5px;
+    }
+    80% {
+        padding-bottom: 10px;
+    }
+}

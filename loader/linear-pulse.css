@@ -1,0 +1,56 @@
+.linear-pulse > div {
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 100%;
+    margin-left: -8px;
+}
+
+.linear-pulse > div:nth-child(1), .linear-pulse > div:nth-child(5) {
+    animation: bounceOuter 1.5s infinite linear;
+}
+
+.linear-pulse > div:nth-child(2), .linear-pulse > div:nth-child(4) {
+    animation: bounceInner 1.5s infinite linear;
+}
+
+.linear-pulse > div:nth-child(3) {
+    animation: bounceMiddle 1.5s infinite linear;
+}
+
+@keyframes bounceOuter {
+    0%, 40%, 100% {
+        transform: scale(0.4);
+    }
+    15% {
+        transform: scale(0.5);
+    }
+    65% {
+        transform: scale(0.3);
+    }
+}
+
+@keyframes bounceInner {
+    0%, 40%, 100% {
+        transform: scale(0.4);
+    }
+    15% {
+        transform: scale(0.6);
+    }
+    65% {
+        transform: scale(0.2);
+    }
+}
+
+@keyframes bounceMiddle {
+    0%, 40%, 100% {
+        transform: scale(0.4);
+    }
+    15% {
+        transform: scale(0.75);
+    }
+    65% {
+        transform: scale(0.1);
+    }
+}

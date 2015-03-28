@@ -8,57 +8,19 @@
         html, body {
             background-color: #006666;
         }
+
         .middle {
             width: 100px;
             height: 50px;
             position: absolute;
-            top:0;
+            top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
         }
     </style>
-
-    <style type="text/css">
-        .wobbler > div {
-            height: 32px;
-            width: 5px;
-            background-color: white;
-            display: inline-block;
-
-            animation: stretch 1.2s infinite ease-in-out;
-        }
-
-        .wobbler > div:nth-child(1) {
-            animation-delay: -1.3s
-        }
-
-        .wobbler > div:nth-child(2) {
-            animation-delay: -1.2s
-        }
-
-        .wobbler > div:nth-child(3) {
-            animation-delay: -1.1s
-        }
-
-        .wobbler > div:nth-child(4) {
-            animation-delay: -1.0s
-        }
-
-        .wobbler > div:nth-child(5) {
-            animation-delay: -0.9s
-        }
-
-        @keyframes stretch {
-            0%, 40%, 100% {
-                transform: scaleY(0.5);
-            }
-            20% {
-                transform: scaleY(1.1);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="wobbler.css" type="text/css">
 </head>
 <body>
 <div class="middle">
