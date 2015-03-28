@@ -35,22 +35,3 @@ header div#github {
     float: right;
     margin: 8px 15px 0 0;
 }
-
-.content {
-    display: flex;
-    flex: 0 1 auto;
-    flex-flow: row wrap;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.quarters {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 25%;
-    max-width: 25%;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-}
