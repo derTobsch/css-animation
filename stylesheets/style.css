@@ -3,129 +3,54 @@ html {
 }
 
 body {
-    font: 11px/1.1 'Open Sans', sans-serif;
+    font: 11px/1.1 'Raleway', sans-serif;
     margin: 0;
-}
-
-a, a:link, a:visited, a:active, .mailMe {
-    outline: none;
-    color: #336A0A;
-    text-decoration: none;
-    transition: color .2s linear;
-}
-
-a:hover {
-    color: black;
 }
 
 body {
     height: 100%;
     width: 100%;
     margin: 0;
-}
-
-#content {
-    max-width: 1250px;
-    margin: 120px auto 0;
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+    background-color: #006666;
 }
 
 header {
-    min-height: 60px;
-    min-width: 1220px;
+    margin: 1vmax 8vmax 0;
+    height: 2vmax;
 }
 
-#inside-header {
-    max-width: 1180px;
-    margin: 0 auto;
+header div#title {
+    float: left;
+    margin-top: 2vmax;
+    color: white;
+    font-size: 3em;
 }
 
-#inside-header div#twitter {
+header div#twitter {
     float: right;
     margin-right: 10px;
 }
 
-#inside-header div#github {
+header div#github {
     float: right;
     margin: 8px 15px 0 0;
 }
 
-#background {
-    min-width: 1200px;
+.content {
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    box-sizing: border-box;
     width: 100%;
-    height: 230px;
-    background-size: Auto Auto;
-    background: #000000 url("../images/background.jpg") no-repeat;
-    position: absolute;
-    z-index: -1;
-    box-shadow: inset 0 0 4px #000000;
 }
 
-.project {
-    padding-bottom: 20px;
-    text-align: left;
-    border-bottom: 1px solid #006c2b;
-    clear: both;
-    overflow: auto;
-}
-
-.project-content {
-    font-size: 1.2em;
-    clear: both;
-    margin: 20px 20px 300px 20px;
-    color: #000000;
-}
-
-#about-me {
-    text-align: left;
-    clear: both;
+.quarters {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 25%;
+    max-width: 25%;
     height: 200px;
-    margin-top: 25px;
-}
-
-#about-me-picture-tile {
-    text-align: left;
-    height: 105px;
-    width: 116px;
-    float: left;
-    margin-left: 70px;
-    padding-top: 10px;
-    box-shadow: 0 0 2px #000000;
-    border-radius: 5px;
-    background-image: url(../images/ich.png);
-    background-size: 116px auto;
-}
-
-#about-me-content {
-    margin-left: 220px;
-    margin-top: 20px;
-    color: #000000;
-    max-width: 850px;
-    font-size: 1.2em;
-}
-
-footer#bottom {
-    margin-top: 120px;
-    text-align: left;
-    font-size: 1.2em;
-    clear: both;
-    display: none;
-}
-
-#bottom * {
-    display: block;
-    float: left;
-}
-
-.project-title, .about-me-title {
-    font-size: 1.8em;
-    clear: both;
-    margin: .4em 0 1em 0;
-    color: #006c2b;
-}
-
-.about-me-title {
-    font-size: 1.4em;
+    align-items: center;
+    justify-content: center;
 }

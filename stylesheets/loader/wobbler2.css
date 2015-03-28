@@ -1,0 +1,29 @@
+.wobbler2 > div {
+    height: 22px;
+    width: 5px;
+    background-color: white;
+    display: inline-block;
+
+    animation: stretch 1.2s infinite ease-in-out;
+}
+
+.wobbler2 > div:nth-child(1), .wobbler2 > div:nth-child(5) {
+    animation-delay: -1.3s;
+}
+
+.wobbler2 > div:nth-child(2), .wobbler2 > div:nth-child(4) {
+    animation-delay: -1.2s;
+}
+
+.wobbler2 > div:nth-child(3) {
+    animation-delay: -1.1s;
+}
+
+@keyframes stretch {
+    0%, 100% {
+        transform: scaleY(0.2);
+    }
+    50% {
+        transform: scaleY(1.0);
+    }
+}

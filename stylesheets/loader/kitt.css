@@ -1,0 +1,73 @@
+.kitt {
+    margin-right: 85px;
+}
+
+.kitt > .right, .kitt > .left {
+    position: absolute;
+}
+
+.kitt >  .right > div, .kitt > .left > div {
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: -4px;
+}
+
+.kitt > .left > div,.kitt > .right > div {
+    animation: 1.5s linear 0s normal none infinite running bounce;
+}
+
+.kitt > .left > div:nth-child(1),.kitt > .right > div:nth-child(1) {
+    animation-delay: -1.5s;
+}
+
+.kitt > .left > div:nth-child(2) {
+    animation-delay: -1.35s;
+}
+
+.kitt > .left > div:nth-child(3) {
+    animation-delay: -1.2s;
+}
+
+.kitt > .left > div:nth-child(4) {
+    animation-delay: -1.05s;
+}
+
+.kitt > .left > div:nth-child(5) {
+    animation-delay: -0.9s;
+}
+
+.kitt > .left > div:nth-child(6) {
+    animation-delay: -0.75s;
+}
+
+.kitt > .right > div:nth-child(2) {
+    animation-delay: -1.65s;
+}
+
+.kitt > .right > div:nth-child(3) {
+    animation-delay: -1.8s;
+}
+
+.kitt > .right > div:nth-child(4) {
+    animation-delay: -1.95s;
+}
+
+.kitt > .right > div:nth-child(5) {
+    animation-delay: -2.1s;
+}
+
+.kitt > .right > div:nth-child(6) {
+    animation-delay: -2.25s;
+}
+
+@keyframes bounce {
+    0%, 70%, 100% {
+        transform: scale(0);
+    }
+    1% {
+        transform: scale(0.7);
+    }
+}
