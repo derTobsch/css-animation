@@ -1,0 +1,131 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font: 11px/1.1 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+a, a:link, a:visited, a:active, .mailMe {
+    outline: none;
+    color: #336A0A;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+a:hover {
+    color: black;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#content {
+    max-width: 1250px;
+    margin: 120px auto 0;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    min-height: 60px;
+    min-width: 1220px;
+}
+
+#inside-header {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+#inside-header div#twitter {
+    float: right;
+    margin-right: 10px;
+}
+
+#inside-header div#github {
+    float: right;
+    margin: 8px 15px 0 0;
+}
+
+#background {
+    min-width: 1200px;
+    width: 100%;
+    height: 230px;
+    background-size: Auto Auto;
+    background: #000000 url("../images/background.jpg") no-repeat;
+    position: absolute;
+    z-index: -1;
+    box-shadow: inset 0 0 4px #000000;
+}
+
+.project {
+    padding-bottom: 20px;
+    text-align: left;
+    border-bottom: 1px solid #006c2b;
+    clear: both;
+    overflow: auto;
+}
+
+.project-content {
+    font-size: 1.2em;
+    clear: both;
+    margin: 20px 20px 300px 20px;
+    color: #000000;
+}
+
+#about-me {
+    text-align: left;
+    clear: both;
+    height: 200px;
+    margin-top: 25px;
+}
+
+#about-me-picture-tile {
+    text-align: left;
+    height: 105px;
+    width: 116px;
+    float: left;
+    margin-left: 70px;
+    padding-top: 10px;
+    box-shadow: 0 0 2px #000000;
+    border-radius: 5px;
+    background-image: url(../images/ich.png);
+    background-size: 116px auto;
+}
+
+#about-me-content {
+    margin-left: 220px;
+    margin-top: 20px;
+    color: #000000;
+    max-width: 850px;
+    font-size: 1.2em;
+}
+
+footer#bottom {
+    margin-top: 120px;
+    text-align: left;
+    font-size: 1.2em;
+    clear: both;
+    display: none;
+}
+
+#bottom * {
+    display: block;
+    float: left;
+}
+
+.project-title, .about-me-title {
+    font-size: 1.8em;
+    clear: both;
+    margin: .4em 0 1em 0;
+    color: #006c2b;
+}
+
+.about-me-title {
+    font-size: 1.4em;
+}
