@@ -17,16 +17,19 @@
     <meta name="robots" content="index,follow"/>
     <meta name="revisit-after" content="1 week"/>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="javascript/show-sources.js"></script>
+
     <link href="favicon.ico" type="image/x-icon" rel="icon"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/css-animation.css"/>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/loader/kitt.css"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/loader/linear-bounce.css"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/loader/linear-pulse.css"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/loader/wobbler.css"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/loader/wobbler2.css"/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/icons/equalizer.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/animations/kitt.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/animations/linear-bounce.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/animations/linear-pulse.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/animations/wobbler.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/animations/wobbler2.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/animations/equalizer.css"/>
 </head>
 <body>
 <header>
@@ -54,6 +57,11 @@
             <div></div>
             <div></div>
         </div>
+        <div class="code">
+            <img src="images/arrow.svg"/>
+            <span class="name">Source</span>
+            <img src="images/arrow.svg"/>
+        </div>
     </div>
     <div class="quarters">
         <div class="wobbler2">
@@ -62,6 +70,11 @@
             <div></div>
             <div></div>
             <div></div>
+        </div>
+        <div class="code">
+            <img src="images/arrow.svg"/>
+            <span class="name">Source</span>
+            <img src="images/arrow.svg"/>
         </div>
     </div>
     <div class="quarters">
@@ -72,6 +85,11 @@
             <div></div>
             <div></div>
         </div>
+        <div class="code">
+            <img src="images/arrow.svg"/>
+            <span class="name">Source</span>
+            <img src="images/arrow.svg"/>
+        </div>
     </div>
     <div class="quarters">
         <div class="linear-bounce">
@@ -80,6 +98,11 @@
             <div></div>
             <div></div>
             <div></div>
+        </div>
+        <div class="code">
+            <img src="images/arrow.svg"/>
+            <span class="name">Source</span>
+            <img src="images/arrow.svg"/>
         </div>
     </div>
     <div class="quarters">
@@ -101,6 +124,11 @@
                 <div></div>
             </div>
         </div>
+        <div class="code">
+            <img src="images/arrow.svg"/>
+            <span class="name">Source</span>
+            <img src="images/arrow.svg"/>
+        </div>
     </div>
 </div>
 
@@ -111,7 +139,19 @@
             <div></div>
             <div></div>
         </div>
+        <div class="code">
+            <img src="images/arrow.svg"/>
+            <span class="name">Source</span>
+            <img src="images/arrow.svg"/>
+        </div>
     </div>
 </div>
+
+<div id="output">
+    <h1 id="output-header"></h1>
+    <textarea id="output-html" readonly="readonly"></textarea>
+    <textarea id="output-css" readonly="readonly"></textarea>
+</div>
+
 </body>
 </html>

@@ -7,6 +7,7 @@
 }
 
 .quarters {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -15,4 +16,66 @@
     height: 200px;
     align-items: center;
     justify-content: center;
+}
+
+.code {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    cursor: pointer;
+    display: flex;
+    line-height: 20px;
+}
+
+.code > img {
+    width: 9px;
+}
+
+.code > img:first-child {
+    transform: rotateZ(180deg);
+}
+
+.code > span.name {
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: white;
+}
+
+#output {
+    display: none;
+    position: absolute;
+    left: 20vw;
+    top: 7vh;
+    height: 83vh;
+    width: 60vw;
+    color: black;
+    background-color: white;
+    border-radius: .5vw;
+}
+
+#output-header {
+    color: #006666;
+    width: 56vw;
+    margin-left: 1vw;
+}
+
+#output textarea {
+    background-color: white;
+    border: hidden;
+    resize: none;
+    display: block;
+    margin: 0 auto;
+    width: 57vw;
+    padding-left: 2vw;
+}
+
+#output textarea#output-html {
+    border-bottom: 1pt solid #006666;
+    height: 13vh;
+    padding-bottom: 2vh;
+}
+
+#output textarea#output-css {
+    padding-top: 2vh;
+    height: 58vh;
 }
