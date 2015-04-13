@@ -3,17 +3,16 @@
     width: 38px;
     height: 38px;
     opacity: 0;
-    transform: rotate(225deg);
     animation: orbit 5.5s infinite;
 }
 
-.circle-spherical > div:after {
+.circle-spherical > div:before {
     content: '';
     position: absolute;
     width: 5px;
     height: 5px;
-    border-radius: 5px;
-    background-color: white;
+    border-radius: 100%;
+    background: white;
 }
 
 .circle-spherical > div:nth-child(2) {
@@ -35,11 +34,12 @@
 @keyframes orbit {
     0% {
         transform: rotate(225deg);
-        opacity: 1;
+        opacity: 0;
         animation-timing-function: ease-out;
     }
     7% {
         transform: rotate(345deg);
+        opacity: 1;
         animation-timing-function: linear;
     }
     30% {
@@ -59,11 +59,7 @@
         transform: rotate(945deg);
         animation-timing-function: ease-out;
     }
-    76% {
-        transform: rotate(945deg);
-        opacity: 0;
-    }
-    100% {
+    76%, 100% {
         transform: rotate(945deg);
         opacity: 0;
     }
